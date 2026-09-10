@@ -75,4 +75,4 @@ The application was developed and tested locally. A recorded demo is provided ab
 
 **Ng Hoi Yee**
 
-Smart Pantry AI Capstone Project
+Smart Pantry AI Project
