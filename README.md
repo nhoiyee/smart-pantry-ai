@@ -1,170 +1,78 @@
 # Smart Pantry AI
 
-Smart Pantry AI is an AI-powered full-stack web application designed to help users manage household food inventory, monitor expiry dates, reduce food waste, and generate AI-powered recommendations and recipes based on available pantry ingredients.
+Smart Pantry AI is a full-stack AI web application that helps users manage their pantry, track food expiry dates, and get AI-powered food recommendations and recipes.
 
-The project was developed using Next.js, TypeScript, Supabase, PostgreSQL, and the OpenAI API.
+The project was built using Next.js, TypeScript, Supabase, PostgreSQL, and the OpenAI API.
 
-## 🎥 Project Demo
+## Demo
 
-Watch the Smart Pantry AI application demo:
+[Watch the Smart Pantry AI Demo](https://drive.google.com/file/d/1GuqiZ5NV8C0VypqkLLXPcJrze7C9Xnzg/view?usp=sharing)
 
-👉 [Smart Pantry AI – Demo Video](https://drive.google.com/file/d/1GuqiZ5NV8C0VypqkLLXPcJrze7C9Xnzg/view?usp=sharing)
-
-> The demo shows the main application workflow, including pantry management, expiry tracking, pantry-aware AI recommendations, and AI recipe generation.
-
-## ✨ Key Features
+## Key Features
 
 - User registration and login
-- Secure authentication using Supabase
-- Pantry inventory management
-- Add, view, update, and delete pantry items
-- Expiry date tracking
-- Fresh, Expiring Soon, and Expired status indicators
-- Pantry dashboard and inventory summary
-- Pantry-aware AI recommendations
-- AI recipe generation using available pantry ingredients
+- Add, edit, view, and delete pantry items
+- Track food expiry dates
+- Fresh, Expiring Soon, and Expired status
+- Pantry inventory summary
+- AI recommendations based on pantry items
+- AI recipe generation
 - Expired-food safety filtering
-- Handling of restricted or undesired pantry items
-- User-specific data protection using Row Level Security (RLS)
-- Responsive web interface
-- API error handling and validation
+- User data protection using Row Level Security (RLS)
 
-## 🛠 Technology Stack
+## Technology Used
 
-### Frontend
 - Next.js
 - React
 - TypeScript
-- Tailwind CSS
-
-### Backend
-- Next.js API Routes
 - Supabase
-
-### Database
-- PostgreSQL (Supabase)
-
-### Authentication & Security
-- Supabase Authentication
-- Row Level Security (RLS)
-
-### Artificial Intelligence
+- PostgreSQL
 - OpenAI API
-
-### Development & Version Control
-- Git
+- Tailwind CSS
 - GitHub
 
-## 🏗 System Architecture
+## How It Works
 
-Smart Pantry AI uses a full-stack web architecture in which the Next.js application provides the user interface and server-side API functionality.
+Users add food items to their pantry and record information such as quantity and expiry date.
 
-Supabase provides authentication and PostgreSQL database services, while the OpenAI API provides AI-powered pantry recommendations and recipe generation.
+The system tracks the food's expiry status. Users can also ask the Pantry AI for suggestions or generate recipes using available pantry ingredients.
 
-### High-Level Flow
+Expired food is filtered out so that it is not intentionally recommended for consumption.
 
-User → Next.js Frontend → Next.js API Routes → Supabase / OpenAI → Frontend → User
+## Running the Project
 
-The application was developed and tested locally, with the source code maintained in GitHub.
-
-## 📦 Main Application Functions
-
-### Pantry Management
-
-Users can manage their personal pantry inventory by adding, viewing, updating, and deleting food items.
-
-Each pantry item can contain information such as quantity, unit, purchase date, expiry date, storage location, barcode, and image information.
-
-### Expiry Tracking
-
-The application monitors food expiry dates and classifies pantry items as:
-
-- Fresh
-- Expiring Soon
-- Expired
-
-This helps users identify food that should be consumed soon and prevents expired items from being used in AI-generated food recommendations.
-
-### Pantry-Aware AI
-
-Authenticated users can ask AI-powered questions based on the food currently available in their pantry.
-
-The application retrieves the user's pantry data and provides suitable pantry information to the OpenAI API to generate contextual recommendations.
-
-### AI Recipe Generation
-
-Users can generate recipes based on suitable ingredients currently available in their pantry.
-
-Safety logic prevents expired food items from being intentionally recommended for consumption.
-
-## 🔒 Security
-
-Smart Pantry AI implements several security measures, including:
-
-- Supabase Authentication
-- User-specific database access
-- PostgreSQL Row Level Security (RLS)
-- Protected API requests
-- Server-side environment variables for sensitive credentials
-- Input validation
-- API error handling
-- Expired-food safety filtering
-
-## 💻 Running the Project Locally
-
-Install the project dependencies:
+Install the dependencies:
 
 ```bash
 npm install
 ```
 
-Create a `.env.local` file and configure the required Supabase and OpenAI environment variables.
+Create a `.env.local` file with the required Supabase and OpenAI API settings.
 
-Then start the development server:
+Start the application:
 
 ```bash
 npm run dev
 ```
 
-Open:
+Then open:
 
 ```text
 http://localhost:3000
 ```
 
-> API keys and other sensitive credentials should never be committed to the repository.
+## Testing
 
-## 🧪 Testing
+The project was tested for authentication, pantry management, expiry tracking, AI recommendations, recipe generation, safety filtering, and error handling.
 
-The application was tested for:
+## Project Status
 
-- User registration and authentication
-- Valid and invalid login
-- Pantry CRUD operations
-- User data isolation
-- Expiry tracking
-- Pantry API behaviour
-- Pantry-aware AI recommendations
-- AI recipe generation
-- Restricted/undesired item handling
-- Expired-food safety handling
-- Empty pantry scenarios
-- API error handling
-- Security and access control
-- Application performance
+Core development and testing are complete.
 
-All final test scenarios used for the project passed after identified issues were corrected and retested.
+The application was developed and tested locally. A recorded demo is provided above.
 
-## 📌 Project Status
-
-**Final submission version**
-
-Core implementation and testing have been completed.
-
-The application is currently demonstrated through a recorded project demo rather than a publicly hosted live deployment.
-
-## 👤 Author
+## Author
 
 **Ng Hoi Yee**
 
-Capstone Project – Smart Pantry AI
+Smart Pantry AI Capstone Project
